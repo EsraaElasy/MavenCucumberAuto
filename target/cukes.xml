@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="2" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="42.741">
+<testcase classname="Register - user could login with valid account" name="user could register with valid email and password" time="13.102">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given navigate to home page.................................................passed
+And go to register page.....................................................passed
+When select gender type.....................................................undefined
+And Enter first and last name...............................................skipped
+And Enter birth of date.....................................................skipped
+And enter email.............................................................skipped
+And Enter password and confirm password.....................................skipped
+And click on rigister button................................................skipped
+Then verify user registered successfully....................................skipped
+]]></failure>
+</testcase>
+<testcase classname="login - user could login with valid account" name="user could login with valid email and password" time="18.627">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.ico\-account&quot;}&#10;  (Session info: chrome=108.0.5359.125)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.7.1', revision: 'c6795baf1a3'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [832dd765dbc5bc7c6d67271b12d5f994, findElement {using=class name, value=ico-account}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AMIT\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49959/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 832dd765dbc5bc7c6d67271b12d5f994" type="org.openqa.selenium.NoSuchElementException"><![CDATA[And navigate to home page...................................................passed
+When go to login page.......................................................passed
+When enter valid email and password.........................................passed
+And click on login button...................................................passed
+Then verify user login successfully.........................................failed
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":".ico\-account"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [832dd765dbc5bc7c6d67271b12d5f994, findElement {using=class name, value=ico-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AMIT\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49959/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 832dd765dbc5bc7c6d67271b12d5f994
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:551)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at org.example.stepDefinition.TC02_loginStepDef.verify(TC02_loginStepDef.java:50)
+	at ✽.verify user login successfully(file:///C:/Users/AMIT/IdeaProjects/MavenCucumber/src/main/resources/features/F02_Login.feature:14)
+]]></failure>
+</testcase>
+<testcase classname="login - user could login with valid account" name="user could login with valid email and password 2" time="9.923">
+<system-out><![CDATA[And navigate to home page...................................................passed
+When go to login page.......................................................passed
+When enter invalid email and password.......................................passed
+And click on login button...................................................passed
+Then verify user not login successfully.....................................passed
+]]></system-out>
+</testcase>
+</testsuite>

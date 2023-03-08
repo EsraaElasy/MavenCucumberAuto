@@ -1,0 +1,58 @@
+-------------------------------------------------------------------------------
+Test set: org.example.TestRunner.Runner
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 45.33 s <<< FAILURE! - in org.example.TestRunner.Runner
+runScenario(org.example.TestRunner.Runner)  Time elapsed: 13.707 s  <<< FAILURE!
+io.cucumber.testng.UndefinedStepException: 
+The step 'select gender type' and 6 other step(s) are undefined.
+You can implement these steps using the snippet(s) below:
+
+@When("select gender type")
+public void select_gender_type() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Enter first and last name")
+public void enter_first_and_last_name() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Enter birth of date")
+public void enter_birth_of_date() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("enter email")
+public void enter_email() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("Enter password and confirm password")
+public void enter_password_and_confirm_password() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@When("click on rigister button")
+public void click_on_rigister_button() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+@Then("verify user registered successfully")
+public void verify_user_registered_successfully() {
+    // Write code here that turns the phrase above into concrete actions
+    throw new io.cucumber.java.PendingException();
+}
+
+
+runScenario(org.example.TestRunner.Runner)  Time elapsed: 18.727 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".ico\-account"}
+  (Session info: chrome=108.0.5359.125)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.7.1', revision: 'c6795baf1a3'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_351'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [832dd765dbc5bc7c6d67271b12d5f994, findElement {using=class name, value=ico-account}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 108.0.5359.125, chrome: {chromedriverVersion: 108.0.5359.71 (1e0e3868ee06..., userDataDir: C:\Users\AMIT\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:49959}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49959/devtoo..., se:cdpVersion: 108.0.5359.125, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 832dd765dbc5bc7c6d67271b12d5f994
+
